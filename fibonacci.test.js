@@ -11,7 +11,7 @@ test('fibonacciSumEven with an input of 34 should return 44 ', () => {
 });
 
 
-test('fibonacciSumEven with an input of 34 should return 60696 ', () => {
+test('fibonacciSumEven with an input of 100000 should return 60696 ', () => {
   expect(fibonacciSumEven(100000)).toBe(60696);
 });
 
@@ -29,7 +29,7 @@ test('fibonacciSortaSnazzy with an input of 34 should return 44 ', () => {
   expect(fibonacciSortaSnazzy(34)).toBe(44);
 });
 
-test('fibonacciSortaSnazzy with an input of 34 should return 60696 ', () => {
+test('fibonacciSortaSnazzy with an input of 100000 should return 60696 ', () => {
   expect(fibonacciSortaSnazzy(100000)).toBe(60696);
 });
 
