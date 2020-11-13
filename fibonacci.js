@@ -52,7 +52,15 @@ If F(n) is even, then:
   Voila!
 */
 
-// less iterations version
+/* even sequence in fibonacci goes 2, 8, 34, 144, 610
+  To demonstrate previous explanation: 8 = 4*2 + 0
+  34 = 4*8+2
+  144 = 4*34 + 8
+  610 = 4*144+34 and so on and so forth
+
+  Mostly this version is to go through less iterations
+  and because it was something new to me
+ */
 export function fibonacciSortaSnazzy(maximumValue){
   let fib3 = 2;
   let fib6 = 0;
@@ -61,7 +69,6 @@ export function fibonacciSortaSnazzy(maximumValue){
 
   while (result <= maximumValue) {
     summed += result;
-
     result = 4 * fib3 + fib6;
     fib6 = fib3;
     fib3 = result;
